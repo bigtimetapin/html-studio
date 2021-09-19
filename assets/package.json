@@ -1,0 +1,25 @@
+{
+  "name": "html-studio",
+  "version": "1.0.0",
+  "description": "Design Studio in the browser",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style expanded --include-path=node_modules/bulma sass/custom.scss css/custom.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigtimetapin/html-studio.git"
+  },
+  "author": "https://github.com/MrMizz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigtimetapin/html-studio/issues"
+  },
+  "homepage": "https://github.com/bigtimetapin/html-studio#readme",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "dom-to-image": "^2.6.0",
+    "node-sass": "^6.0.1"
+  }
+}
