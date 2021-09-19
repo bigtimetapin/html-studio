@@ -1,16 +1,46 @@
 module View exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class)
+import Html.Attributes exposing (class, id)
+import Html.Events exposing (onClick)
 import Model exposing (Model)
-import Msg exposing (Msg)
+import Msg exposing (Msg(..))
 
 
 view : Model -> Html Msg
 view _ =
+    let
+        body : Html Msg
+        body =
+            Html.div
+                []
+                [ node
+                , button
+                ]
+    in
     Html.div
         []
-        [ hero (Html.div [] [])
+        [ hero body
+        ]
+
+
+node : Html Msg
+node =
+    Html.div
+        [ id "html-studio-id"
+        , class "html-studio-style"
+        ]
+        [ Html.text "Style this"
+        ]
+
+
+button : Html Msg
+button =
+    Html.button
+        [ class "button"
+        , onClick (SaveImg "hs")
+        ]
+        [ Html.text "Download"
         ]
 
 
