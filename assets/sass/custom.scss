@@ -3,12 +3,29 @@
 
 .html-studio-style {
   background-color: #00c7a9;
-  border: 2px sandybrown;
+  width: 600px;
+  height: 900px;
+  border-right: 10px solid sandybrown;
 }
 
-// custom variables
-$family-sans-serif: "Karla", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
-$family-secondary: "Rubik", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
+.header-style {
+  color: #3D92CA !important;
+  font-size: 3em;
+  font-family: Rubik, sans-serif;
+}
+
+.header-style, .footer-style {
+  background-color: #241F20;
+  height: 100px;
+}
+
+.body-style {
+  background-color: #4a4a4a;
+}
+
+.button-style {
+  margin-top: 50px;
+}
 
 // bulma import
 @import "node_modules/bulma/bulma";

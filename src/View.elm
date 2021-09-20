@@ -37,7 +37,7 @@ node =
 button : Html Msg
 button =
     Html.button
-        [ class "button"
+        [ class "button button-style"
         , onClick (SaveImg "hs")
         ]
         [ Html.text "Download"
@@ -47,7 +47,7 @@ button =
 hero : Html Msg -> Html Msg
 hero body =
     Html.section
-        [ class "hero is-fullheight"
+        [ class "hero is-fullheight body-style"
         ]
         [ Html.div
             [ class "hero-head"
@@ -55,7 +55,7 @@ hero body =
             [ header
             ]
         , Html.div
-            [ class "hero-body"
+            [ class "hero-body container"
             ]
             [ body
             ]
@@ -70,14 +70,13 @@ hero body =
 header : Html Msg
 header =
     Html.nav
-        [ class "level has-background-white-bis"
+        [ class "level header-style"
         ]
         [ Html.div
             [ class "level-item"
             ]
             [ Html.div
-                [ class "title is-family-secondary"
-                ]
+                []
                 [ Html.text "HTML Studio"
                 ]
             ]
@@ -87,6 +86,6 @@ header =
 footer : Html Msg
 footer =
     Html.footer
-        [ class "footer has-background-white-ter"
+        [ class "footer-style"
         ]
         []
