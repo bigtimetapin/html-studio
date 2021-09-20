@@ -1,7 +1,7 @@
 module View exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, id)
+import Html.Attributes exposing (class, id, src, width)
 import Html.Events exposing (onClick)
 import Model exposing (Model)
 import Msg exposing (Msg(..))
@@ -30,7 +30,19 @@ node =
         [ id "html-studio-id"
         , class "html-studio-style"
         ]
-        [ Html.text "Style this"
+        [ Html.div
+            [ class "html-studio-spacing"
+            ]
+            [ Html.div
+                []
+                [ Html.text "style"
+                ]
+            , Html.img
+                [ src "images/logo.png"
+                , width 450
+                ]
+                []
+            ]
         ]
 
 

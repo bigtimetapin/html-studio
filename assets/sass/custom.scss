@@ -3,9 +3,20 @@
 
 .html-studio-style {
   background-color: #00c7a9;
+  font-size: 5em;
+  // resolution
   width: 600px;
   height: 900px;
+  line-height: 900px;
   border-right: 10px solid sandybrown;
+  // spacing
+  text-align: center;
+}
+
+.html-studio-spacing {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .header-style {
