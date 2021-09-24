@@ -28,13 +28,13 @@ node : Html Msg
 node =
     Html.div
         [ id "html-studio-id"
-        , class "html-studio-style"
+        , class "html-studio-style has-hyper-blue"
         ]
         [ Html.div
             [ class "html-studio-spacing"
             ]
             [ Html.img
-                [ src "images/01_somos.png"
+                [ src "images/02_somos.png"
                 ]
                 []
             ]
