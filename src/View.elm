@@ -33,13 +33,8 @@ node =
         [ Html.div
             [ class "html-studio-spacing"
             ]
-            [ Html.div
-                []
-                [ Html.text "style"
-                ]
-            , Html.img
-                [ src "images/logo.png"
-                , width 450
+            [ Html.img
+                [ src "images/01_somos.png"
                 ]
                 []
             ]
