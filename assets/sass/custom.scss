@@ -2,9 +2,9 @@
 // main ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .html-studio-style {
   // resolution
-  width: 1080px;
-  height: 1920px;
-  line-height: 1920px;
+  width: 1920px;
+  height: 1080px;
+  line-height: 1080px;
   // spacing
   text-align: center;
 }
@@ -30,12 +30,13 @@
 .has-font-1 {
   font-family: WorkSans, sans-serif;
   font-size: 5em;
+  padding-bottom: 50px;
 }
 
 .has-font-2 {
   font-family: Imbue, sans-serif;
   font-size: 4em;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

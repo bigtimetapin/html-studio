@@ -18,25 +18,36 @@ view _ =
                 , button
                 ]
     in
-    Html.div
-        []
-        [ hero body
-        ]
+    hero body
 
 
 node : Html Msg
 node =
     Html.div
         [ id "html-studio-id"
-        , class "html-studio-style has-hyper-blue"
+        , class "html-studio-style has-sky-blue has-off-white-text"
         ]
         [ Html.div
             [ class "html-studio-spacing"
             ]
-            [ Html.img
-                [ src "images/02_somos.png"
+            [ Html.div
+                [ class "has-font-1"
                 ]
-                []
+                [ Html.text "CDMX EP"
+                ]
+            , Html.div
+                [ class "has-font-1"
+                ]
+                [ Html.text "DAY 01"
+                ]
+            , Html.div
+                [ class "has-font-2"
+                ]
+                [ Html.text
+                """
+                ". . . AND SEE WHAT THE BPM IS"
+                """
+                ]
             ]
         ]
 
@@ -45,7 +56,7 @@ button : Html Msg
 button =
     Html.button
         [ class "button button-style"
-        , onClick (SaveImg "hs")
+        , onClick (SaveImg "1920_1080")
         ]
         [ Html.text "Download"
         ]
