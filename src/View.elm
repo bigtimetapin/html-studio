@@ -25,38 +25,62 @@ node : Html Msg
 node =
     Html.div
         [ id "html-studio-id"
-        , class "html-studio-style has-sky-blue has-off-white-text"
+        , class "html-studio-style has-hyper-blue"
         ]
         [ Html.div
             [ class "html-studio-spacing"
             ]
             [ Html.div
-                [ class "has-font-1"
-                ]
-                [ Html.text "CDMX EP"
-                ]
-            , Html.div
-                [ class "has-font-1"
-                ]
-                [ Html.text "DAY 01"
-                ]
-            , Html.div
-                [ class "has-font-2"
+                [ class "has-font-2 has-off-white-text"
                 ]
                 [ Html.text
-                """
-                ". . . AND SEE WHAT THE BPM IS"
-                """
+                    """
+                    WE FILMED EVERYTHING
+                    """
+                ]
+            , Html.div
+                [ class "has-font-2 has-off-white-text"
+                ]
+                [ Html.text
+                    """
+                    FIRST REEL DROPS TOMORROW
+                    """
                 ]
             ]
         ]
+
+
+reelIntro : List (Html msg)
+reelIntro =
+    [ Html.div
+        [ class "has-font-1 has-off-white-text"
+        ]
+        [ Html.text "CDMX EP"
+        ]
+    , Html.div
+        [ class "has-font-2 has-off-white-text"
+        ]
+        [ Html.text
+            """
+            RECORDED IN 3 DAYS
+            """
+        ]
+    , Html.div
+        [ class "has-font-2 has-off-white-text"
+        ]
+        [ Html.text
+            """
+            ENTIRELY IMPROVISATIONAL
+            """
+        ]
+    ]
 
 
 button : Html Msg
 button =
     Html.button
         [ class "button button-style"
-        , onClick (SaveImg "1920_1080")
+        , onClick (SaveImg "slide")
         ]
         [ Html.text "Download"
         ]
