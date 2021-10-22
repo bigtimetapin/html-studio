@@ -1,7 +1,7 @@
 module View exposing (view)
 
 import Html exposing (Html)
-import Html.Attributes exposing (class, id, src, width)
+import Html.Attributes exposing (class, id, src, style, width)
 import Html.Events exposing (onClick)
 import Model exposing (Model)
 import Msg exposing (Msg(..))
@@ -25,28 +25,12 @@ node : Html Msg
 node =
     Html.div
         [ id "html-studio-id"
-        , class "html-studio-style has-hyper-blue"
+        , class "html-studio-style has-orange"
         ]
         [ Html.div
             [ class "html-studio-spacing"
             ]
-            [ Html.div
-                [ class "has-font-2 has-off-white-text"
-                ]
-                [ Html.text
-                    """
-                    WE FILMED EVERYTHING
-                    """
-                ]
-            , Html.div
-                [ class "has-font-2 has-off-white-text"
-                ]
-                [ Html.text
-                    """
-                    FIRST REEL DROPS TOMORROW
-                    """
-                ]
-            ]
+            reelIntro
         ]
 
 
@@ -62,7 +46,7 @@ reelIntro =
         ]
         [ Html.text
             """
-            RECORDED IN 3 DAYS
+            INTERLUDE 1
             """
         ]
     , Html.div
@@ -70,9 +54,40 @@ reelIntro =
         ]
         [ Html.text
             """
-            ENTIRELY IMPROVISATIONAL
+            DAY 02
             """
         ]
+    , Html.div
+        [ class "has-font-2 has-off-white-text"
+        ]
+        [ Html.text
+            """
+            DAY 01
+            """
+        ]
+    , Html.div
+        [ class "has-font-2 has-off-white-text"
+        ]
+        [ Html.text
+            """
+            INTERLUDE 2
+            """
+        ]
+    , Html.div
+        [ class "has-font-2 has-off-white-text"
+        ]
+        [ Html.text
+            """
+            DAY 03
+            """
+        ]
+    , Html.img
+        [ src "images/02_somos.png"
+        , width 200
+        , style "position" "relative"
+        , style "right" "450px"
+        ]
+        []
     ]
 
 
@@ -80,7 +95,7 @@ button : Html Msg
 button =
     Html.button
         [ class "button button-style"
-        , onClick (SaveImg "slide")
+        , onClick (SaveImg "1080_1920")
         ]
         [ Html.text "Download"
         ]

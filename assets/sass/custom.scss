@@ -3,9 +3,9 @@
 .html-studio-style {
   // resolution
   width: 1080px;
-  height: 1920px;
-  line-height: 1920px;
+  height: 1080px;
   // spacing
+  line-height: 1080px;
   text-align: center;
   // color
   background-image: url("../images/noise1.jpeg");
@@ -33,13 +33,14 @@
 .has-font-1 {
   font-family: WorkSans, sans-serif;
   font-size: 5em;
-  padding-bottom: 50px;
+  padding-top: 112px;//0px
+  padding-bottom: 28px//50px;
 }
 
 .has-font-2 {
   font-family: Imbue, sans-serif;
   font-size: 4em;
-  padding-top: 100px;
+  padding-top: 56px //100px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
